@@ -1,4 +1,4 @@
-FROM centos:7.3
+FROM centos:6.8
 RUN yum install openssh-server -y
 RUN /etc/init.d/sshd start
 RUN echo "root:123456"|chpasswd
